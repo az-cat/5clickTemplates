@@ -109,7 +109,7 @@
     "publicIPAddressID": "[resourceId('Microsoft.Network/publicIPAddresses',variables('publicIPAddressName'))]",
     "nicName": "[concat(variables('namingInfix'), 'nic')]",
     "ipConfigName": "[concat(variables('namingInfix'), 'ipconfig')]",
-    "scriptUrl": "https://raw.githubusercontent.com/tanewill/5clickTemplates/master/DataSynapse_CustomerBits/",
+    "scriptUrl": "https://raw.githubusercontent.com/az-cat/HPC-5clickTemplates/master/DataSynapse_CustomerBits/",
     "headNodeScriptTemplateURI": "[uri(deployment().properties.templateLink.uri, 'headnode-script.json')]",
     "vmssScriptTemplateURI": "[uri(deployment().properties.templateLink.uri, 'vmss-script.json')]",
     "osType": {

@@ -64,7 +64,7 @@
 			"defaultValue": "",
 			"type": "String",
 			"metadata": {
-				"description": "ANSYS License Server IP, standard ports. MSFT Users contact tanewill@microsoft.com for license"
+				"description": "ANSYS License Server IP, standard ports. MSFT Users contact az-cat@microsoft.com for license"
 			}
 		},
 		"downloadModel": {
@@ -112,7 +112,7 @@
 		"publicIPAddressID": "[resourceId('Microsoft.Network/publicIPAddresses',variables('publicIPAddressName'))]",
 		"nicName": "[concat(variables('namingInfix'), 'nic')]",
 		"ipConfigName": "[concat(variables('namingInfix'), 'ipconfig')]",
-		"scriptUrl": "https://raw.githubusercontent.com/tanewill/5clickTemplates/master/RawANSYSCluster/",
+		"scriptUrl": "https://raw.githubusercontent.com/az-cat/HPC-5clickTemplates/master/RawANSYSCluster/",
 		"cnSetupScript": "cn-setup.sh",
 		"hnSetupScript": "hn-setup.sh",
 		"osType": {

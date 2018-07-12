@@ -120,9 +120,9 @@
     "vnetID": "[resourceId(parameters('existingVirtualNetworkResourceGroup'), 'Microsoft.Network/virtualNetworks', parameters('virtualNetworkName'))]",
     "subnetRef": "[concat(variables('vnetID'),'/subnets/',parameters('subnetName'))]",
     "sshKeyPath": "[concat('/home/',parameters('adminUsername'),'/.ssh/authorized_keys')]",
-    "templateBaseUrl": "https://raw.githubusercontent.com/tanewill/5clickTemplates/master/torque-cluster-custom-image/",
+    "templateBaseUrl": "https://raw.githubusercontent.com/az-cat/HPC-5clickTemplates/master/torque-cluster-custom-image/",
     "installationCLI": "[concat('sh azuredeploy.sh ', variables('masterVMName'), ' ', '10.5.65.10', ' ', variables('workerVMName'), ' ', '10.5.65.', ' ', '11', ' ', parameters('scaleNumber'), ' ', parameters('adminUsername'), ' ', parameters('adminPassword'), ' ', variables('templateBaseUrl'))]",
-    "templatelink": "[concat('https://raw.githubusercontent.com/tanewill/5clickTemplates/master/torque-cluster-custom-image/',parameters('newOrExisting'),'vnet.json')]",
+    "templatelink": "[concat('https://raw.githubusercontent.com/az-cat/HPC-5clickTemplates/master/torque-cluster-custom-image/',parameters('newOrExisting'),'vnet.json')]",
     "storageAccountType": "Standard_LRS"
   },
   "resources": [

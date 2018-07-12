@@ -27,7 +27,7 @@ You use an [Azure Resource Manager](https://docs.microsoft.com/en-us/azure/azure
 (ARM) template to deploy the cluster shown in the following figure.
 
 
-![](https://github.com/tanewill/5clickTemplates/blob/master/images/hpc_star-ccm-architecture.png "High-performance cluster for running Star-CCM+ in Azure.")
+![](https://github.com/az-cat/HPC-5clickTemplates/blob/master/images/hpc_star-ccm-architecture.png "High-performance cluster for running Star-CCM+ in Azure.")
 Figure 1. High-performance cluster for running Star-CCM+ in Azure.
 
 After downloading and configuring Star-CCM+, the template authenticates all the
@@ -115,7 +115,7 @@ license.
 1.  Right-click **Deploy to Azure** shown below and select either **Open link in
     new tab** or **Open link in new window**.
 
->    [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Ftanewill%2F5clickTemplates%2Fmaster%2FRawStarCCMCluster%2Fazuredeploy.json)
+>    [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Faz-cat%2FHPC-5clickTemplates%2Fmaster%2FRawStarCCMCluster%2Fazuredeploy.json)
 
 1.  In the Azure portal, enter values for the following settings:
 
