@@ -18,9 +18,8 @@ export PATH=$PATH:$JAVA_HOME/bin
 mkdir tibco
 cd tibco
 
-azure storage blob download datasynapsebenchmarkstorage TIB_dsp_gridserver_6.2.0.tar.gz --account-name azbenchmarkstorage --sas "$TOKEN"
-
-azure storage blob download datasynapsebenchmarkstorage TIB_gridserver_6.2.0_hotfix07.jar --account-name azbenchmarkstorage --sas "$TOKEN"
+wget "https://azbenchmarkstorage.blob.core.windows.net/datasynapsebenchmarkstorage/TIB_dsp_gridserver_6.2.0.tar.gz${TOKEN}" -O TIB_dsp_gridserver_6.2.0.tar.gz
+wget "https://azbenchmarkstorage.blob.core.windows.net/datasynapsebenchmarkstorage/TIB_gridserver_6.2.0_hotfix07.jar${TOKEN}" -O TIB_gridserver_6.2.0_hotfix07.jar
 
 tar -xzf TIB_dsp_gridserver_6.2.0.tar.gz
 echo y | java -jar TIB_gridserver_6.2.0_hotfix07.jar /opt/tibco/datasynapse/manager

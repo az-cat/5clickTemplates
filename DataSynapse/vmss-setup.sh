@@ -13,7 +13,7 @@ cd /opt
 mkdir tibco
 cd tibco
 
-azure storage blob download datasynapsebenchmarkstorage DSEngineLinux64.tar.gz --account-name azbenchmarkstorage --sas "$TOKEN"
+wget "https://azbenchmarkstorage.blob.core.windows.net/datasynapsebenchmarkstorage/DSEngineLinux64.tar.gz${TOKEN}" -O DSEngineLinux64.tar.gz
 tar -xzvf DSEngineLinux64.tar.gz
 cd datasynapse/engine
 
